@@ -127,13 +127,13 @@ a:hover{
 }
 
 .icon-plus::before {
-  background: url('../icons/plus.svg');
+  background: url('./plus.svg');
 }
 .icon-play::before{
-  background: url('../icons/play.svg');
+  background: url('/play.svg');
 }
 .icon-Info::before{
-  background: url('../icons/info.svg');
+  background: url('./info.svg');
 }
 
 .list-content{
