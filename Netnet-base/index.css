@@ -1,0 +1,191 @@
+@font-face {
+  font-family:'Netflix';
+  src: url('../font/Avenir.ttc');
+  font-weight: 400;
+  font-style: normal;
+}
+h1{
+  color: red;
+  text-align: left;
+  margin: 1px;
+  padding: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+body{
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: 'Netflix';
+  padding-bottom: 90px;
+}
+a{
+  color: rgb(255, 255, 255);
+  text-decoration-line: none;
+}
+a:hover{
+  color: red;
+}
+
+.navegation-item{
+  list-style: none;
+  text-align: center;
+
+}
+
+.navegation{
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-auto-columns: 100px;
+  grid-auto-flow: column;
+  justify-content: space-around;
+  position: relative;
+  z-index: 2;
+}
+
+.featured{
+  margin-top: -100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.featured-details{
+  /*border: 1px solid yellow;*/
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to top, rgb(0, 0, 0) 20%, transparent 100%);
+}
+
+.tags{
+  /*border: 1px solid red;*/
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.tag{
+  /*border: 1px solid red;*/
+  display: flex;
+}
+
+.tag:before{
+  content: '•';
+  margin-right: 10px;
+}
+.tag:first-child::before{
+  display: none;
+}
+.featured-actions{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-bottom: 4em;
+}
+
+.button{
+  border: 1px solid blue;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  padding: 5px 1em 5px .5em;
+  border: none;
+  border-radius: 3px;
+}
+.button::before{
+  /*border: 1px solid red;*/
+  content: '';
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.button-secondary{
+  /*border: 1px solid red;*/
+  background: none;
+  color: white;
+  font-size: 1em;
+  min-width: 100px;
+  cursor: pointer;
+  border: none;
+}
+
+.button-secondary::before{
+  content: '';
+  display: block;
+  /*border: 1px solid green;*/
+  width: 25px;
+  height: 25px;
+  margin: auto;
+  margin-bottom: 5px;
+}
+
+.icon-plus::before {
+  background: url('../icons/plus.svg');
+}
+.icon-play::before{
+  background: url('../icons/play.svg');
+}
+.icon-Info::before{
+  background: url('../icons/info.svg');
+}
+
+.list-content{
+  /*border: 1px solid red;*/
+  white-space: nowrap;
+  overflow:auto;
+}
+.list-item{
+  display: inline-block;
+  margin-left: 10px;
+}
+.list-item:first-child{
+  margin:0px;
+}
+.list{
+  /*border: 1px solid green;*/
+  padding: 0 1em;
+}
+
+.footer{
+  /*border: 1px solid red;*/
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  padding: 1em 0 0;
+}
+
+.tab-list{
+  /*border: 1px solid green;*/
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+}
+.tab-list a{
+  color: gray;
+}
+.tab-item{
+  /*border: 1px solid rgb(255, 0, 234);*/
+  text-align: center;
+
+}
+
+.tab-item svg{
+  display: block;
+  margin: auto;
+}
+
+.tab-item:hover :is(path,span){
+  fill: aliceblue;
+  color: white;
+}
